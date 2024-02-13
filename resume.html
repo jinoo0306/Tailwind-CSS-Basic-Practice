@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #u_skip {
+            position: relative;
+            z-index: 3000;
+        }
+
+        #u_skip a {
+            position: absolute;
+            top: -60px;
+            left: 0;
+            width: 138px;
+            background: #333;
+            text-align: center;
+        }
+
+        #u_skip a:focus {
+            top: 0px;
+            border: 2px solid #4ec53d;
+        }
+
+        #u_skip span {
+            display: inline-block;
+            padding: 2px 6px 0 0;
+            font-size: 13px;
+            line-height: 26px;
+            color: #fff;
+            letter-spacing: -1px;
+            white-space: nowrap;
+        }   
+    </style>
+</head>
+<body>
+    <h1 class="sr-only">이호준 이력서</h1>
+    <div id="u_skip">
+        <a href="#details">
+            <span>Details 바로가기</span>
+        </a> 
+        <a href="#profile">
+            <span>Profile 바로가기</span>
+        </a> 
+        <a href="#projectHistory">
+            <span>Project History 바로가기</span>
+        </a> 
+        <a href="#degree">
+            <span>Degree 바로가기</span>
+        </a> 
+    </div>
+    <div class="container lg:p-20 p-8 space-y-8">
+        <div class="lg:flex">
+            <div class="lg:w-1/4">
+                <img src="profile.jpg" alt="JINWOO CHO" class="rounded-full h-32 w-32 lg:h-48 lg:w-48">
+            </div>
+            <div class="lg:w-3/4">
+                <div class="text-5xl lg:text-7xl">JINWOO<span class="text-[#3EAF0E]"> CHO<span></div>
+                <div class="mt-6 text-gray-400 font-bold">Developer, Computer Scientist, ICT Tutor</div>
+            </div>
+        </div>
+        <div class="lg:flex">
+            <div id="details" class="lg:w-1/4 flex-col space-y-8">
+                <div class="text-2xl text-[#3EAF0E] font-bold"><span class="inline-block w-8 h-8 rounded bg-[#3EAF0E] text-white text-center">1</span> Details</div>
+                <div class="ml-10">
+                    <div class="text-xl">Github</div>
+                    <a class="text-gray-400" href="hhttps://github.com/jinoo0306">https://github.com/jinoo0306</a>
+                </div>
+                <div class="ml-10">
+                    <div class="text-xl">Pick Project</div>
+                    <ul class="pl-10 list-disc space-y-1">
+                        <li><a class="text-gray-400" href="#none">1만시간의법칙</a></li>
+                        <li><a class="text-gray-400" href="#none">벤딩머신</a></li>
+                        <li><a class="text-gray-400" href="#none">렌딩페이지</a></li>
+                        <li><a class="text-gray-400" href="#none">감귤마켓</a></li>
+                    </ul>
+                </div>
+                <div class="ml-10 space-y-2">
+                    <div class="text-xl">Homepage And Service</div>
+                    <a class="text-gray-400 inline-block" href="https://github.com/jinoo0306/">https://github.com/jinoo0306/</a>
+                    <a class="text-gray-400 inline-block" href="https://blog.naver.com/hijinoo_/">https://blog.naver.com/hijinoo_/</a>
+                    <a class="text-gray-400 inline-block" href="https://www.instagram.com/zz._.inn00/">https://www.instagram.com/zz._.inn00/</a>
+                </div>
+                <div class="ml-10">
+                    <div class="text-xl">Skill</div>
+                    <ul class="pl-10 list-disc space-y-1">
+                        <li>1bar-Project 9개 이하</li>
+                        <li>2bar-Project 10개 이상</li>
+                        <li>3bar-즉시 투입 가능</li>
+                    </ul>
+                    
+                    <div class="flex gap-2 mt-2">
+                        <div class="w-1/6">JS</div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <div class="w-1/6">
+                          C
+                        </div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <div class="w-1/6">C++</div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <div class="w-1/6">Python</div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <div class="w-1/6">Java</div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                        <div class="w-1/6 bg-[#3EAF0E] h-2 mt-2 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-3/4 lg:m-0 mt-6">
+                <div id="profile">
+                    <div class="text-2xl text-[#3EAF0E] font-bold"><span class="inline-block w-8 h-8 rounded bg-[#3EAF0E] text-white text-center">2</span> Profile</div>
+                    <div class="mt-4 space-y-2 ml-12">
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero optio harum provident aut, mollitia qui veniam nihil quo corrupti doloremque repellat. Unde corrupti qui praesentium alias error sit saepe.</div>
+                        <div>Ipsa, temporibus mollitia. Possimus autem alias sunt saepe porro ad amet sapiente facilis, ex inventore, placeat cupiditate molestias rem hic commodi itaque quod voluptatum sint, voluptas neque animi qui culpa?</div>
+                    </div>
+                </div>
+                <div id="projectHistory" class="mt-8 flex-col space-y-8">
+                    <div class="text-2xl text-[#3EAF0E] font-bold"><span class="inline-block w-8 h-8 rounded bg-[#3EAF0E] text-white text-center">3</span> Project History</div>
+                    <div class="ml-10 flex-col space-y-2">
+                        <div class="border-l-4 border-[#3EAF0E] pl-2 text-xl">Weniv world <span class="text-sm text-gray-600">2017.03. - 2021.11</span></div>
+                        <div>Used Skill : <span class="text-blue-500">#HTML #CSS #JS #C #C++ #Java</span></div>
+                        <div>Project link : <a class="text-gray-400" href="http://www.paullab.co.kr/">http://www.paullab.co.kr/</a></div>
+                        <div class="ml-4">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere illum esse, blanditiis odio tenetur odit consectetur accusamus consequuntur neque assumenda eveniet, aperiam cumque unde architecto, fugiat quas porro? Quo, officia!</div>
+                            <div>Ea nam suscipit animi libero voluptas qui, eos obcaecati debitis! Id mollitia ab, laborum distinctio porro quisquam quo dicta quis, amet quidem atque, harum praesentium. Nobis cumque earum mollitia provident.</div>
+                            <div>Sed eum fugit consectetur. Totam facilis eligendi quisquam eaque quis tempore incidunt adipisci eos sapiente saepe nostrum esse, harum cum voluptate facere quae nulla qui reiciendis inventore ea obcaecati vel!</div>
+                        </div>
+                    </div>
+                    <div class="ml-10 flex-col space-y-2">
+                        <div class="border-l-4 border-[#3EAF0E] pl-2 text-xl">Weniv world <span class="text-sm text-gray-600">2017.03. - 2021.11</span></div>
+                        <div>Used Skill : <span class="text-blue-500">#Django #Python #HTML #CSS #JS</span></div>
+                        <div>Project link : <a class="text-gray-400" href="http://www.paullab.co.kr/">http://www.paullab.co.kr/</a></div>
+                        <div class="ml-4">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere illum esse, blanditiis odio tenetur odit consectetur accusamus consequuntur neque assumenda eveniet, aperiam cumque unde architecto, fugiat quas porro? Quo, officia!</div>
+                            <div>Ea nam suscipit animi libero voluptas qui, eos obcaecati debitis! Id mollitia ab, laborum distinctio porro quisquam quo dicta quis, amet quidem atque, harum praesentium. Nobis cumque earum mollitia provident.</div>
+                            <div>Sed eum fugit consectetur. Totam facilis eligendi quisquam eaque quis tempore incidunt adipisci eos sapiente saepe nostrum esse, harum cum voluptate facere quae nulla qui reiciendis inventore ea obcaecati vel!</div>
+                        </div>
+                    </div>
+                    <div class="ml-10 flex-col space-y-2">
+                        <div class="border-l-4 border-[#3EAF0E] pl-2 text-xl">Weniv world <span class="text-sm text-gray-600">2017.03. - 2021.11</span></div>
+                        <div>Used Skill : <span class="text-blue-500">#Django #Python #HTML #CSS #JS</span></div>
+                        <div>Project link : <a class="text-gray-400" href="http://www.paullab.co.kr/">http://www.paullab.co.kr/</a></div>
+                        <div class="ml-4">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere illum esse, blanditiis odio tenetur odit consectetur accusamus consequuntur neque assumenda eveniet, aperiam cumque unde architecto, fugiat quas porro? Quo, officia!</div>
+                            <div>Ea nam suscipit animi libero voluptas qui, eos obcaecati debitis! Id mollitia ab, laborum distinctio porro quisquam quo dicta quis, amet quidem atque, harum praesentium. Nobis cumque earum mollitia provident.</div>
+                            <div>Sed eum fugit consectetur. Totam facilis eligendi quisquam eaque quis tempore incidunt adipisci eos sapiente saepe nostrum esse, harum cum voluptate facere quae nulla qui reiciendis inventore ea obcaecati vel!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex-col space-y-8">
+                    <div id="degree" class="text-2xl text-[#3EAF0E] font-bold"><span class="inline-block w-8 h-8 rounded bg-[#3EAF0E] text-white text-center">4</span> Degree</div>
+                    <div class="ml-10 flex-col space-y-2">
+                        <div class="border-l-4 border-[#3EAF0E] pl-2 text-xl">Coding University <span class="text-sm text-gray-600">2017.03. - 2021.11</span></div>
+                        <div class="ml-4">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere illum esse, blanditiis odio tenetur odit consectetur accusamus consequuntur neque assumenda eveniet, aperiam cumque unde architecto, fugiat quas porro? Quo, officia!</div>
+                            <div>Ea nam suscipit animi libero voluptas qui, eos obcaecati debitis! Id mollitia ab, laborum distinctio porro quisquam quo dicta quis, amet quidem atque, harum praesentium. Nobis cumque earum mollitia provident.</div>
+                            <div>Sed eum fugit consectetur. Totam facilis eligendi quisquam eaque quis tempore incidunt adipisci eos sapiente saepe nostrum esse, harum cum voluptate facere quae nulla qui reiciendis inventore ea obcaecati vel!</div>
+                        </div>
+                    </div>
+                    <div class="ml-10 flex-col space-y-2">
+                        <div class="border-l-4 border-[#3EAF0E] pl-2 text-xl">Coding University <span class="text-sm text-gray-600">2017.03. - 2021.11</span></div>
+                        <div class="ml-4">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere illum esse, blanditiis odio tenetur odit consectetur accusamus consequuntur neque assumenda eveniet, aperiam cumque unde architecto, fugiat quas porro? Quo, officia!</div>
+                            <div>Ea nam suscipit animi libero voluptas qui, eos obcaecati debitis! Id mollitia ab, laborum distinctio porro quisquam quo dicta quis, amet quidem atque, harum praesentium. Nobis cumque earum mollitia provident.</div>
+                            <div>Sed eum fugit consectetur. Totam facilis eligendi quisquam eaque quis tempore incidunt adipisci eos sapiente saepe nostrum esse, harum cum voluptate facere quae nulla qui reiciendis inventore ea obcaecati vel!</div>
+                        </div>
+                    </div>
+                    <div class="ml-10 flex-col space-y-2">
+                        <div class="border-l-4 border-[#3EAF0E] pl-2 text-xl">Coding University <span class="text-sm text-gray-600">2017.03. - 2021.11</span></div>
+                        <div class="ml-4">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere illum esse, blanditiis odio tenetur odit consectetur accusamus consequuntur neque assumenda eveniet, aperiam cumque unde architecto, fugiat quas porro? Quo, officia!</div>
+                            <div>Ea nam suscipit animi libero voluptas qui, eos obcaecati debitis! Id mollitia ab, laborum distinctio porro quisquam quo dicta quis, amet quidem atque, harum praesentium. Nobis cumque earum mollitia provident.</div>
+                            <div>Sed eum fugit consectetur. Totam facilis eligendi quisquam eaque quis tempore incidunt adipisci eos sapiente saepe nostrum esse, harum cum voluptate facere quae nulla qui reiciendis inventore ea obcaecati vel!</div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
